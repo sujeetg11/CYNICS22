@@ -1,0 +1,429 @@
+
+:root{
+    --white: #ddd;
+    --dark: #111;
+    --darkGrey: #474b4f;
+    --lightGrey: #6b6e70;
+	--darkgreen: #006400;
+    --transition: all 0.5s ease;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    line-height: 1.6;
+	background-color: #F7DBF0;
+}
+img{
+    width: 100%;
+    display: block;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+h1, h2, h3, h4, h5, h6, p{
+    margin: 15px 0;
+}
+
+/********************** Utility Classes *******************/
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+}
+.btn{
+    background: var(--darkGreen);
+    border: none;
+    display: block;
+    width: 150px;
+    text-align: center;
+    color: var(--darkGreen);
+    text-transform: uppercase;
+    background: transparent;
+    font-size: 15px;
+    padding: 12px;
+    border: 2px solid var(--darkGreen);
+    border-radius: 25px;
+    margin: 15px 0;
+    transition: var(--transition);
+}
+.btn:hover{
+    background: var(--darkGreen);
+    color: #fff;
+}
+.active{
+    color: var(--lighGrey)!important;
+}
+
+/**************** end of Utility Classes *******************/
+
+/********************** Header styling *********************/
+.topnav {
+    margin:0;
+    background-color: transparent ;
+    overflow: hidden;
+    
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+   background-color: #775aa5 ;
+
+ }
+  .topnav input{
+      overflow: center;
+      float: right;
+      position: relative;
+      padding: 10px 10px ;
+  }
+  .topnav button{
+     float : right;
+     position:relative;
+   
+    background-color: transparent ; /* highlight#6C3 */
+    
+     border: none;
+     color: white;
+     padding: 15px 32px;
+     text-decoration: none;
+     font-size: 16px;
+ }
+ .taj{ min-height:100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/header.jpg") center/cover no-repeat;
+    color:#F0D9FF;
+    padding: 20px;
+}
+.about{
+    margin-top: -160px;
+}
+.about-content img{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    margin-top: 60px;
+    position: relative;
+}
+.about-img{
+    background: #fff;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.about-content h3{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 100;
+    background: rgba(255, 255, 255, 0.1);
+    width: 400px;
+    margin: 35px auto;
+    text-align: center;
+}
+blockquote{
+    font-size: 20px;
+    font-weight: 300;
+    opacity: 0.9;
+    width: 60vw;
+    margin: 45px auto 15px auto;
+    text-align: center;
+}
+blockquote span{
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--darkGreen);
+    font-weight: 300;
+    letter-spacing: 5px;
+    display: block;
+}
+/********************* End of Header ***********************/
+
+
+
+.img-full-gallery{
+    width: 80%;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+}
+.img-full-gallery img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.img-full-gallery img:hover{
+    transform: scale(1.5);
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.popup-image{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+.popup-image img{
+    width: 50%;
+    height: 500px;
+}
+.popup-image span{
+    font-size: 35px;
+    color: white;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    cursor: pointer;
+}
+/*----------blog---*/
+.main{
+
+    margin: 2%;
+   }
+   
+   .card{
+        width: 20%;
+        display: inline-block;
+        box-shadow: 2px 2px 20px black;
+        border-radius: 5px;
+        margin: 2%;
+       }
+   
+   .image img{
+     width: 100%;
+     border-top-right-radius: 5px;
+     border-top-left-radius: 5px;
+   
+   
+   
+    }
+   
+   .title{
+   
+     text-align: center;
+     padding: 10px;
+   
+    }
+   
+   h1{
+     font-size: 20px;
+    }
+   
+   .des{
+     padding: 3px;
+     text-align: center;
+   
+     padding-top: 10px;
+           border-bottom-right-radius: 5px;
+     border-bottom-left-radius: 5px;
+   }
+   button{
+     margin-top: 40px;
+     margin-bottom: 10px;
+     background-color: white;
+     border: 1px solid black;
+     border-radius: 5px;
+     padding:10px;
+   }
+   button:hover{
+     background-color: black;
+     color: white;
+     transition: .5s;
+     cursor: pointer;
+   }
+   
+   /*************** end of blog.html ***********/
+   
+      /*------------contact------*/
+.container0{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+.container0:after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+}
+.left{
+    background: url('background1.jpg') no-repeat center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.left img{
+    height: 500px;
+    width: 500px;
+}
+.contact-box1{
+    width: 900px;
+    justify-content: center;
+    display: grid;
+    display: flex;
+	align-items: center;
+	text-align: center;
+	background-color: white;
+}
+.field{
+	width: 80%;
+	border: 2px solid #E6E6E6;
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 0.5em 1rem;
+	font-size: 1em;
+	margin-bottom: 20px;
+}
+
+
+
+h2{
+	position: relative;
+	padding: 0 0 10px;
+	margin-bottom: 10px;
+}
+
+h2:after{
+	
+    position: absolute;
+    align-items: center;
+    left: 42.5%;
+    bottom: 0;
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color:#5C7AEA;
+}
+.btn{
+    width: 100%;
+    height: 50px;
+    background-color:#3D56B2;
+    color: white;
+    border: blue;
+    font-size: 1.5em;
+
+}
+.btn:hover{
+    background-color: #5C7AEA;
+    cursor: pointer;
+}
+.field:hover{
+    background-color: #E6E6E6;
+}
+.bg1{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+.right{
+    padding: 15px;
+}
+/******************* Footer Styling *****************/
+
+.footer{
+    background: black;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+.footer-container > div{
+    margin: 40px 0;
+}
+.footer-container h2{
+    color:  white;
+    font-size: 36px;
+    font-weight: 500;
+    letter-spacing: 7px;
+}
+.footer-container p{
+    opacity: 0.7;
+}
+.subs{
+    background: #000;
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px auto;
+}
+.subs i{
+    font-size: 26px;
+    flex: 10%;
+    display: block;
+}
+.subs input{
+    flex: 60%;
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    padding: 0 5px;
+    outline: 0;
+    color: #fff;
+}
+.subs button{
+    flex: 30%;
+    font-size: 16px;
+    padding: 15px 0;
+    font-weight: bold;
+    background:  #775aa5;
+    border: none;
+    transition: var(--transition);
+    cursor: pointer;
+}
+.subs button:hover{
+    color: #fff;
+}
+.footer > p{
+    text-align: center;
+    font-size: 14px;
+}
+
+/******************* end of footer ****************/
+
+
+@media (max-width:767px) {
+    .popup-image img{
+        width: 70%;
+        height: 300px;
+    }
+}
